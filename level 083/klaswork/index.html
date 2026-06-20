@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //შექმენით ფუნქცია, რომელიც იღებს სიტყვას და გამოიყენეთ .split()-ს რათა დააბრუნოთ შებრუნებული სიტყვა.
+    function reverseWord(word) {
+    return word.split("").reverse().join("");
+    }
+    //შექმენით ოთხი ხილისგან შემდგარი სია და გამოიყენეთ 
+    // slice მხოლოდ პირველი ორის დაასატოვებლად, შემდეგ კი გამოიყენეთ for ციკლი თითოეულის გამოსატანად.
+    
+    let fruits = ["ვაშლი", "ბანანი", "ფორთოხალი", "მსხალი"];
+
+    let firstTwoFruits = fruits.slice(0, 2);
+
+    for (let i = 0; i < firstTwoFruits.length; i++) {
+    console.log(firstTwoFruits[i]);
+    }
+
+    // გამოიყენეთ .split() ფუნქცია, რათა წინადადება „i love coding“ სამი
+    //  სიტყვისგან შემდგარ სიად გადააქციოთ და for ციკლი გამოიყენეთ თითოეული სიტყვის კონსოლში გამოსატანად.
+    let sentence = "i love coding";
+
+    let words = sentence.split(" ");
+
+
+    for (let i = 0; i < words.length; i++) {
+    console.log(words[i]);
+    }
+    //აიღეთ რიცხვების სია, როგორიცაა 1 2 3 და გამოიყენეთ reverse, შემდეგ კი join, 3-2-1 სტრინგის შესაქმნელად.
+    const nums = [1, 2, 3];
+    const result = nums.reverse().join("-");
+
+    console.log(result); 
+
+
+
+    //შექმენით სამი სახელისგან შემდგარი სია, გამოიყენე slice ბოლო ორი სიტყვის ამოსაღებად და მათ ერთ სტრიქონად
+    //  გადასაქცევად გამოიყენე join.(' ')
+    let names = ["ნიკა", "მარი", "გიორგი"];
+    let lastTwoNames = names.slice(1);
+    let result1 = lastTwoNames.join(" ");
+
+    console.log(result);
+
+    </script>
+</body>
+</html>
+<!-- 
+
+ახსენით თქვენი სიტყვებით რა არის:
+
+* React +(უპირატესობები), - არ სჭირდება წამოღება არის ჰიბრიდული და უფრო სწრაფად მუშაობს
+* JSX,- გზა რომ დავწეროთ როგორც html მაგრამ ვწეროთ js ში
+* root, - js ში ელემენტის წამოღების მერე საძირკველს უკეთებს
+* render()-რომ გამოვიტანოთ საიტზე
+-->
